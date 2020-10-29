@@ -10,13 +10,10 @@ import UIKit
 
 class DetailsViewController: UIViewController, UICollectionViewDelegate , UICollectionViewDataSource {
     
-    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var title2Label: UILabel!
     @IBOutlet weak var detailsCollectionView: UICollectionView!
-   
-    
-   
+
     var itemTitle : String!
     var itemImage : UIImage!
     
@@ -68,7 +65,7 @@ class DetailsViewController: UIViewController, UICollectionViewDelegate , UIColl
         imageView.image = itemImage
         
         setMainCollectionView()
-        setSegmentedControl()
+        
     }
   
     
@@ -94,9 +91,9 @@ class DetailsViewController: UIViewController, UICollectionViewDelegate , UIColl
         detailsCollectionView.delegate = self
         detailsCollectionView.dataSource = self
 
-        let cellSize = CGSize(width:(self.view.frame.width) - 40 , height:150) //ekranin burada boyutuna gore ayarladik.
+        let cellSize = CGSize(width:(self.view.frame.width) - 30 , height:150) //ekranin burada boyutuna gore ayarladik.
         let layout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 16, left: 16, bottom: 0, right: 16)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 20)
         layout.itemSize = cellSize
         layout.scrollDirection = .vertical //Yana mi gidicek asagiyami gidecek onu burda belirtiyoruz.
         detailsCollectionView.setCollectionViewLayout(layout, animated: true)

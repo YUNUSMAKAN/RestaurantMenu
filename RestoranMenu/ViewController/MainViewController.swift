@@ -7,7 +7,6 @@
 
 import UIKit
 import SideMenu
-import BetterSegmentedControl
 
 class MainViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -47,9 +46,9 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         mainCollectionView.dataSource = self
         mainCollectionView.delegate = self
 
-        let cellSize = CGSize(width:(self.view.frame.width / 2 ) - 30 , height:150) //ekranin burada boyutuna gore ayarladik. / 2 diyerek iki stun olusturduk
+        let cellSize = CGSize(width:(self.view.frame.width / 2 ) - 30 , height:180) //ekranin burada boyutuna gore ayarladik. / 2 diyerek iki stun olusturduk
         let layout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 16, left: 16, bottom: 0, right: 16)
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 20, bottom: 0, right: 20)
         layout.itemSize = cellSize
         layout.scrollDirection = .vertical //Yana mi gidicek asagiyami gidecek onu burda belirtiyoruz.
         mainCollectionView.setCollectionViewLayout(layout, animated: true)

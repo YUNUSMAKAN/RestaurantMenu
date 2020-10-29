@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+
 struct DetailsModel {
     //iki nokto koyunca tip veririz.
     // esittir dedigimiz zaman deger vermis olur
