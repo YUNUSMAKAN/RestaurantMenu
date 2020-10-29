@@ -3,19 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DBF1781736DD9893ACE51AA /* Pods_RestoranMenu_RestoranMenuUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F46294E0CBB6A29581605E /* Pods_RestoranMenu_RestoranMenuUITests.framework */; };
+		6C597575253ECFC600F19B63 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C597574253ECFC500F19B63 /* SideMenuViewController.swift */; };
+		6C597585253EDB7200F19B63 /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C597584253EDB7200F19B63 /* SideMenuModel.swift */; };
+		6C59758A253F049B00F19B63 /* EnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C597589253F049B00F19B63 /* EnterViewController.swift */; };
+		6C6AB553253D721C00248D32 /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6AB552253D721C00248D32 /* StoryboardExtension.swift */; };
+		6C761427253D8C3A00175C0D /* NewStroyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C761426253D8C3A00175C0D /* NewStroyboard.storyboard */; };
 		6C768476253999810033112A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C768475253999810033112A /* AppDelegate.swift */; };
 		6C768478253999810033112A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C768477253999810033112A /* SceneDelegate.swift */; };
-		6C76847A253999810033112A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C768479253999810033112A /* ViewController.swift */; };
 		6C76847D253999810033112A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C76847B253999810033112A /* Main.storyboard */; };
 		6C768480253999810033112A /* RestoranMenu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C76847E253999810033112A /* RestoranMenu.xcdatamodeld */; };
-		6C768482253999820033112A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C768481253999820033112A /* Assets.xcassets */; };
+		6C768482253999820033112A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C768481253999820033112A /* Images.xcassets */; };
 		6C768485253999820033112A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C768483253999820033112A /* LaunchScreen.storyboard */; };
 		6C768490253999830033112A /* RestoranMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C76848F253999830033112A /* RestoranMenuTests.swift */; };
 		6C76849B253999830033112A /* RestoranMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C76849A253999830033112A /* RestoranMenuUITests.swift */; };
+		6C7684B725399B250033112A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7684B625399B250033112A /* MainViewController.swift */; };
+		6C7684C025399C280033112A /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7684BF25399C280033112A /* MainCollectionViewCell.swift */; };
+		6C7684C82539A6590033112A /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7684C72539A6590033112A /* NavigationBar.swift */; };
+		6C76850F2539BF5F0033112A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C76850E2539BF5F0033112A /* DetailsViewController.swift */; };
+		6C7685142539C2C10033112A /* DetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7685132539C2C10033112A /* DetailsCollectionViewCell.swift */; };
+		6C76851A2539CD850033112A /* Extentions .swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7685192539CD850033112A /* Extentions .swift */; };
+		6C7685262539D5980033112A /* DetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7685252539D5980033112A /* DetailsModel.swift */; };
+		6C8E3D19254AFEDD0032671B /* AppIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C8E3D18254AFEDD0032671B /* AppIcons.xcassets */; };
+		6C8E3D1E254AFF000032671B /* UICustomColor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C8E3D1D254AFF000032671B /* UICustomColor.xcassets */; };
+		6C8E3D26254B01770032671B /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8E3D25254B01770032671B /* MainModel.swift */; };
+		8B5589F60F9DCFBCF80D4BBC /* Pods_RestoranMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A7EE580B1BA59E63E42155 /* Pods_RestoranMenu.framework */; };
+		A8F487F3B3E7568D85C40565 /* Pods_RestoranMenuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 440B110A6EDA303824D04C2C /* Pods_RestoranMenuTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +53,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		440B110A6EDA303824D04C2C /* Pods_RestoranMenuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestoranMenuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55784CC39CBCAD5FC2DD314F /* Pods-RestoranMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestoranMenu.release.xcconfig"; path = "Target Support Files/Pods-RestoranMenu/Pods-RestoranMenu.release.xcconfig"; sourceTree = "<group>"; };
+		6C597574253ECFC500F19B63 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		6C597584253EDB7200F19B63 /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
+		6C597589253F049B00F19B63 /* EnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterViewController.swift; sourceTree = "<group>"; };
+		6C6AB552253D721C00248D32 /* StoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardExtension.swift; sourceTree = "<group>"; };
+		6C761426253D8C3A00175C0D /* NewStroyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewStroyboard.storyboard; sourceTree = "<group>"; };
 		6C768472253999810033112A /* RestoranMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestoranMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C768475253999810033112A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C768477253999810033112A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6C768479253999810033112A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6C76847C253999810033112A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C76847F253999810033112A /* RestoranMenu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RestoranMenu.xcdatamodel; sourceTree = "<group>"; };
-		6C768481253999820033112A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C768481253999820033112A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6C768484253999820033112A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C768486253999820033112A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C76848B253999830033112A /* RestoranMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestoranMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +74,23 @@
 		6C768496253999830033112A /* RestoranMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestoranMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C76849A253999830033112A /* RestoranMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoranMenuUITests.swift; sourceTree = "<group>"; };
 		6C76849C253999830033112A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C7684B625399B250033112A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6C7684BF25399C280033112A /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		6C7684C72539A6590033112A /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		6C76850E2539BF5F0033112A /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		6C7685132539C2C10033112A /* DetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		6C7685192539CD850033112A /* Extentions .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extentions .swift"; sourceTree = "<group>"; };
+		6C7685252539D5980033112A /* DetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModel.swift; sourceTree = "<group>"; };
+		6C8E3D18254AFEDD0032671B /* AppIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcons.xcassets; sourceTree = "<group>"; };
+		6C8E3D1D254AFF000032671B /* UICustomColor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UICustomColor.xcassets; sourceTree = "<group>"; };
+		6C8E3D25254B01770032671B /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		74F46294E0CBB6A29581605E /* Pods_RestoranMenu_RestoranMenuUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestoranMenu_RestoranMenuUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC76CDFFABBB419094C8EC6 /* Pods-RestoranMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestoranMenu.debug.xcconfig"; path = "Target Support Files/Pods-RestoranMenu/Pods-RestoranMenu.debug.xcconfig"; sourceTree = "<group>"; };
+		B04E8F8E6B19972FB775FE8D /* Pods-RestoranMenu-RestoranMenuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestoranMenu-RestoranMenuUITests.debug.xcconfig"; path = "Target Support Files/Pods-RestoranMenu-RestoranMenuUITests/Pods-RestoranMenu-RestoranMenuUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D8FFA54A1266239A804E1656 /* Pods-RestoranMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestoranMenuTests.release.xcconfig"; path = "Target Support Files/Pods-RestoranMenuTests/Pods-RestoranMenuTests.release.xcconfig"; sourceTree = "<group>"; };
+		ECF6DB2ECE15CE988667C3CD /* Pods-RestoranMenu-RestoranMenuUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestoranMenu-RestoranMenuUITests.release.xcconfig"; path = "Target Support Files/Pods-RestoranMenu-RestoranMenuUITests/Pods-RestoranMenu-RestoranMenuUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F6A7EE580B1BA59E63E42155 /* Pods_RestoranMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestoranMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E0A769B62CFB6FC94E1CA8 /* Pods-RestoranMenuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestoranMenuTests.debug.xcconfig"; path = "Target Support Files/Pods-RestoranMenuTests/Pods-RestoranMenuTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B5589F60F9DCFBCF80D4BBC /* Pods_RestoranMenu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F487F3B3E7568D85C40565 /* Pods_RestoranMenuTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DBF1781736DD9893ACE51AA /* Pods_RestoranMenu_RestoranMenuUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +128,8 @@
 				6C76848E253999830033112A /* RestoranMenuTests */,
 				6C768499253999830033112A /* RestoranMenuUITests */,
 				6C768473253999810033112A /* Products */,
+				C9C1E21D3E09FA4658851F06 /* Pods */,
+				77A2694DC2DC8E12693CC0CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,13 +146,18 @@
 		6C768474253999810033112A /* RestoranMenu */ = {
 			isa = PBXGroup;
 			children = (
+				6C8E3D14254AFE280032671B /* NavigationBar */,
+				6C8E3D13254AFE0E0032671B /* CollectionViewCell */,
+				6C8E3D12254AFDA30032671B /* Plist */,
+				6C8E3D11254AFD7B0032671B /* Assets */,
+				6C8E3D10254AFD6C0032671B /* ViewController */,
+				6C8E3D0F254AFD1E0032671B /* Extensions */,
+				6C7685242539D5740033112A /* Model */,
 				6C768475253999810033112A /* AppDelegate.swift */,
 				6C768477253999810033112A /* SceneDelegate.swift */,
-				6C768479253999810033112A /* ViewController.swift */,
 				6C76847B253999810033112A /* Main.storyboard */,
-				6C768481253999820033112A /* Assets.xcassets */,
+				6C761426253D8C3A00175C0D /* NewStroyboard.storyboard */,
 				6C768483253999820033112A /* LaunchScreen.storyboard */,
-				6C768486253999820033112A /* Info.plist */,
 				6C76847E253999810033112A /* RestoranMenu.xcdatamodeld */,
 			);
 			path = RestoranMenu;
@@ -131,6 +181,94 @@
 			path = RestoranMenuUITests;
 			sourceTree = "<group>";
 		};
+		6C7685242539D5740033112A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C8E3D25254B01770032671B /* MainModel.swift */,
+				6C7685252539D5980033112A /* DetailsModel.swift */,
+				6C597584253EDB7200F19B63 /* SideMenuModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6C8E3D0F254AFD1E0032671B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6C6AB552253D721C00248D32 /* StoryboardExtension.swift */,
+				6C7685192539CD850033112A /* Extentions .swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6C8E3D10254AFD6C0032671B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6C7684B625399B250033112A /* MainViewController.swift */,
+				6C76850E2539BF5F0033112A /* DetailsViewController.swift */,
+				6C597574253ECFC500F19B63 /* SideMenuViewController.swift */,
+				6C597589253F049B00F19B63 /* EnterViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6C8E3D11254AFD7B0032671B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6C768481253999820033112A /* Images.xcassets */,
+				6C8E3D18254AFEDD0032671B /* AppIcons.xcassets */,
+				6C8E3D1D254AFF000032671B /* UICustomColor.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		6C8E3D12254AFDA30032671B /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				6C768486253999820033112A /* Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		6C8E3D13254AFE0E0032671B /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				6C7684BF25399C280033112A /* MainCollectionViewCell.swift */,
+				6C7685132539C2C10033112A /* DetailsCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		6C8E3D14254AFE280032671B /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				6C7684C72539A6590033112A /* NavigationBar.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		77A2694DC2DC8E12693CC0CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6A7EE580B1BA59E63E42155 /* Pods_RestoranMenu.framework */,
+				74F46294E0CBB6A29581605E /* Pods_RestoranMenu_RestoranMenuUITests.framework */,
+				440B110A6EDA303824D04C2C /* Pods_RestoranMenuTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9C1E21D3E09FA4658851F06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8EC76CDFFABBB419094C8EC6 /* Pods-RestoranMenu.debug.xcconfig */,
+				55784CC39CBCAD5FC2DD314F /* Pods-RestoranMenu.release.xcconfig */,
+				B04E8F8E6B19972FB775FE8D /* Pods-RestoranMenu-RestoranMenuUITests.debug.xcconfig */,
+				ECF6DB2ECE15CE988667C3CD /* Pods-RestoranMenu-RestoranMenuUITests.release.xcconfig */,
+				F7E0A769B62CFB6FC94E1CA8 /* Pods-RestoranMenuTests.debug.xcconfig */,
+				D8FFA54A1266239A804E1656 /* Pods-RestoranMenuTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +276,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C76849F253999830033112A /* Build configuration list for PBXNativeTarget "RestoranMenu" */;
 			buildPhases = (
+				E3F748B3A6F9FF8F63468722 /* [CP] Check Pods Manifest.lock */,
 				6C76846E253999810033112A /* Sources */,
 				6C76846F253999810033112A /* Frameworks */,
 				6C768470253999810033112A /* Resources */,
+				48DB712B201E968CE64789B1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +295,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C7684A2253999830033112A /* Build configuration list for PBXNativeTarget "RestoranMenuTests" */;
 			buildPhases = (
+				C8ACC03402430A3B35024A7D /* [CP] Check Pods Manifest.lock */,
 				6C768487253999830033112A /* Sources */,
 				6C768488253999830033112A /* Frameworks */,
 				6C768489253999830033112A /* Resources */,
@@ -173,9 +314,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C7684A5253999830033112A /* Build configuration list for PBXNativeTarget "RestoranMenuUITests" */;
 			buildPhases = (
+				4C26CF5910866D56F309757B /* [CP] Check Pods Manifest.lock */,
 				6C768492253999830033112A /* Sources */,
 				6C768493253999830033112A /* Frameworks */,
 				6C768494253999830033112A /* Resources */,
+				6AD4FB30DF6BEF18C69872B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,8 +377,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C8E3D1E254AFF000032671B /* UICustomColor.xcassets in Resources */,
+				6C8E3D19254AFEDD0032671B /* AppIcons.xcassets in Resources */,
 				6C768485253999820033112A /* LaunchScreen.storyboard in Resources */,
-				6C768482253999820033112A /* Assets.xcassets in Resources */,
+				6C768482253999820033112A /* Images.xcassets in Resources */,
+				6C761427253D8C3A00175C0D /* NewStroyboard.storyboard in Resources */,
 				6C76847D253999810033112A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,15 +402,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		48DB712B201E968CE64789B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RestoranMenu/Pods-RestoranMenu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RestoranMenu/Pods-RestoranMenu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RestoranMenu/Pods-RestoranMenu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C26CF5910866D56F309757B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RestoranMenu-RestoranMenuUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AD4FB30DF6BEF18C69872B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RestoranMenu-RestoranMenuUITests/Pods-RestoranMenu-RestoranMenuUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RestoranMenu-RestoranMenuUITests/Pods-RestoranMenu-RestoranMenuUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RestoranMenu-RestoranMenuUITests/Pods-RestoranMenu-RestoranMenuUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8ACC03402430A3B35024A7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RestoranMenuTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3F748B3A6F9FF8F63468722 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RestoranMenu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6C76846E253999810033112A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C6AB553253D721C00248D32 /* StoryboardExtension.swift in Sources */,
+				6C59758A253F049B00F19B63 /* EnterViewController.swift in Sources */,
 				6C768480253999810033112A /* RestoranMenu.xcdatamodeld in Sources */,
-				6C76847A253999810033112A /* ViewController.swift in Sources */,
 				6C768476253999810033112A /* AppDelegate.swift in Sources */,
+				6C7684C025399C280033112A /* MainCollectionViewCell.swift in Sources */,
 				6C768478253999810033112A /* SceneDelegate.swift in Sources */,
+				6C76850F2539BF5F0033112A /* DetailsViewController.swift in Sources */,
+				6C7684B725399B250033112A /* MainViewController.swift in Sources */,
+				6C8E3D26254B01770032671B /* MainModel.swift in Sources */,
+				6C597575253ECFC600F19B63 /* SideMenuViewController.swift in Sources */,
+				6C76851A2539CD850033112A /* Extentions .swift in Sources */,
+				6C7684C82539A6590033112A /* NavigationBar.swift in Sources */,
+				6C7685262539D5980033112A /* DetailsModel.swift in Sources */,
+				6C7685142539C2C10033112A /* DetailsCollectionViewCell.swift in Sources */,
+				6C597585253EDB7200F19B63 /* SideMenuModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,12 +697,14 @@
 		};
 		6C7684A0253999830033112A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EC76CDFFABBB419094C8EC6 /* Pods-RestoranMenu.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BC29D2LE73;
-				INFOPLIST_FILE = RestoranMenu/Info.plist;
+				INFOPLIST_FILE = RestoranMenu/Plist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,12 +718,14 @@
 		};
 		6C7684A1253999830033112A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55784CC39CBCAD5FC2DD314F /* Pods-RestoranMenu.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BC29D2LE73;
-				INFOPLIST_FILE = RestoranMenu/Info.plist;
+				INFOPLIST_FILE = RestoranMenu/Plist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,6 +739,7 @@
 		};
 		6C7684A3253999830033112A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7E0A769B62CFB6FC94E1CA8 /* Pods-RestoranMenuTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +762,7 @@
 		};
 		6C7684A4253999830033112A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8FFA54A1266239A804E1656 /* Pods-RestoranMenuTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +785,7 @@
 		};
 		6C7684A6253999830033112A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B04E8F8E6B19972FB775FE8D /* Pods-RestoranMenu-RestoranMenuUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +806,7 @@
 		};
 		6C7684A7253999830033112A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECF6DB2ECE15CE988667C3CD /* Pods-RestoranMenu-RestoranMenuUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

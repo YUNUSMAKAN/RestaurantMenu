@@ -1,0 +1,20 @@
+PODS:
+  - BetterSegmentedControl (1.3.0)
+  - SideMenu (6.5.0)
+
+DEPENDENCIES:
+  - BetterSegmentedControl (~> 1.3)
+  - SideMenu
+
+SPEC REPOS:
+  trunk:
+    - BetterSegmentedControl
+    - SideMenu
+
+SPEC CHECKSUMS:
+  BetterSegmentedControl: 85d1b0343a09603b098884d527f550dfc8e6cdd9
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+
+PODFILE CHECKSUM: f323ecadfcb945a9b33d9c9aef8e80b21bc58da1
+
+COCOAPODS: 1.9.3
