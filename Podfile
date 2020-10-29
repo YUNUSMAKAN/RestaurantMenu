@@ -8,7 +8,7 @@ target 'RestoranMenu' do
   # Pods for RestoranMenu
 
   pod 'SideMenu'
-  pod 'BetterSegmentedControl', '~> 1.3'
+  pod 'ScrollableSegmentedControl', '~> 1.5.0'
 
   target 'RestoranMenuTests' do
     inherit! :search_paths

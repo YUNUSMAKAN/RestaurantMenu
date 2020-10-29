@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double BetterSegmentedControlVersionNumber;
-FOUNDATION_EXPORT const unsigned char BetterSegmentedControlVersionString[];
+FOUNDATION_EXPORT double ScrollableSegmentedControlVersionNumber;
+FOUNDATION_EXPORT const unsigned char ScrollableSegmentedControlVersionString[];
 

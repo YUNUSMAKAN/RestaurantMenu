@@ -1,20 +1,20 @@
 PODS:
-  - BetterSegmentedControl (1.3.0)
+  - ScrollableSegmentedControl (1.5.0)
   - SideMenu (6.5.0)
 
 DEPENDENCIES:
-  - BetterSegmentedControl (~> 1.3)
+  - ScrollableSegmentedControl (~> 1.5.0)
   - SideMenu
 
 SPEC REPOS:
   trunk:
-    - BetterSegmentedControl
+    - ScrollableSegmentedControl
     - SideMenu
 
 SPEC CHECKSUMS:
-  BetterSegmentedControl: 85d1b0343a09603b098884d527f550dfc8e6cdd9
+  ScrollableSegmentedControl: 2e64bbe8968a7fcd8aae5014434481464fcdfe60
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
 
-PODFILE CHECKSUM: f323ecadfcb945a9b33d9c9aef8e80b21bc58da1
+PODFILE CHECKSUM: 459e1e10e1a1fb9d635f94648f534927303b202a
 
 COCOAPODS: 1.9.3
