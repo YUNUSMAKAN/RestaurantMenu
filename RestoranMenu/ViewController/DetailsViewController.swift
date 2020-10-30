@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ScrollableSegmentedControl
 
 
 class DetailsViewController: UIViewController, UICollectionViewDelegate , UICollectionViewDataSource {
@@ -13,11 +14,14 @@ class DetailsViewController: UIViewController, UICollectionViewDelegate , UIColl
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var title2Label: UILabel!
     @IBOutlet weak var detailsCollectionView: UICollectionView!
-
+    @IBOutlet weak var segmentController: ScrollableSegmentedControl!
+    
     var itemTitle : String!
     var itemImage : UIImage!
     
     var selectedIndex = 0
+    
+    var mainModel = MainModel(typesTitle: ["KAHVALTI", "APERATİFLER", "SALATALAR", "IZGARA ÇEŞİTLERİ" , "İÇECEKLER", "TATLILAR", "SOĞUK IÇECEKLER", "SICAK İÇECEKLER"], images: ["kahvalti","aperatifler","salatalar","izgara","icecekler","tatlilar","sogukicecekler","sicakicecekler"]  )
     
     var detailsModel = DetailsModel(typeName: [["Kahvaltı Tabağı", "Sucuklu Tost", "Sigara Böreği","Omlet", "Patates Kızartması"],
                                                ["Kumpir","Paçanga Böreği","Mücver","Kısır","Humus"],
@@ -65,13 +69,57 @@ class DetailsViewController: UIViewController, UICollectionViewDelegate , UIColl
         imageView.image = itemImage
         
         setMainCollectionView()
+        setScrollableSegmentController()
+        
+    }
+    
+    func setScrollableSegmentController() {
+        
+        segmentController.segmentStyle = .textOnly
+        segmentController.insertSegment(withTitle: "KAHVALTI", at: 0)
+        segmentController.insertSegment(withTitle: "APERATIFLER", at: 1)
+        segmentController.insertSegment(withTitle: "SALATALAR", at: 2)
+        segmentController.insertSegment(withTitle: "IZGARA CESITLERI", at: 3)
+        segmentController.insertSegment(withTitle: "ICECEKLER", at: 4)
+        segmentController.insertSegment(withTitle: "TATLILAR", at: 5)
+        segmentController.insertSegment(withTitle: "SOGUK ICECEKLER", at: 6)
+        segmentController.insertSegment(withTitle: "SICAK ICECEKLER", at: 7)
+               
+        segmentController.underlineSelected = true
+               
+        segmentController.addTarget(self, action: #selector(DetailsViewController.segmentSelected(sender:)), for: .valueChanged)
+
+           // change some colors
+        segmentController.segmentContentColor = UIColor.white
+        segmentController.selectedSegmentContentColor = UIColor.yellow
+        segmentController.backgroundColor = UIColor.black
+           
+           // Turn off all segments been fixed/equal width.
+           // The width of each segment would be based on the text length and font size.
+        segmentController.fixedSegmentWidth = false
+        
+        let largerRedTextAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.red]
+        let largerRedTextHighlightAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.blue]
+        let largerRedTextSelectAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.orange]
+
+        segmentController.setTitleTextAttributes(largerRedTextAttributes, for: .normal)
+        segmentController.setTitleTextAttributes(largerRedTextHighlightAttributes, for: .highlighted)
+        segmentController.setTitleTextAttributes(largerRedTextSelectAttributes, for: .selected)
+        
+    }
+    
+    @objc func segmentSelected(sender:ScrollableSegmentedControl) {
+        
+        selectedIndex = sender.selectedSegmentIndex
+        detailsCollectionView.reloadData()
+        title2Label.text = mainModel.typesTitle![selectedIndex]
+        imageView.image = UIImage(named: mainModel.images[selectedIndex])
         
     }
   
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
-        //return detailsModel.typePrice!.count
+        return detailsModel.typeName[section].count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -80,7 +128,7 @@ class DetailsViewController: UIViewController, UICollectionViewDelegate , UIColl
         cell.titleLabel.text = detailsModel.typeName[selectedIndex][indexPath.row]
         cell.definitionLabel.text = detailsModel.typeDefinition[selectedIndex][indexPath.row]
         cell.imageView.image = UIImage(named: detailsModel.typeImage![selectedIndex][indexPath.row]) //string olarak aldigimiz imagelari uiimage ile cevirdik
-        cell.priceLabel.text = String(detailsModel.typePrice[selectedIndex][indexPath.row])
+        cell.priceLabel.text = "\(String(detailsModel.typePrice[selectedIndex][indexPath.row])) ₺"
         
         return cell
         
