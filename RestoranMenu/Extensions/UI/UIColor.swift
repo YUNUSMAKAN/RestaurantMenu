@@ -17,4 +17,16 @@ extension UIColor {
     static var customPink: UIColor {
         return UIColor(named: "Pink")!
     }
+    
+    static var Color: UIColor {
+        return UIColor(named: "Color")!
+    }
+    
+    static var Color1: UIColor {
+        return UIColor(named: "Color1")!
+    }
+    
+    static var Color2: UIColor {
+        return UIColor(named: "Color2")!
+    }
 }

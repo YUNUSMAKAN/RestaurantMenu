@@ -10,9 +10,12 @@
 		1DBF1781736DD9893ACE51AA /* Pods_RestoranMenu_RestoranMenuUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F46294E0CBB6A29581605E /* Pods_RestoranMenu_RestoranMenuUITests.framework */; };
 		6C015211254C1AC200F72F50 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C015210254C1AC200F72F50 /* MapViewController.swift */; };
 		6C015216254C1AE400F72F50 /* MapDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C015215254C1AE400F72F50 /* MapDetailsViewController.swift */; };
+		6C439427254F1E3C007F0A0C /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C439426254F1E3C007F0A0C /* MapModel.swift */; };
+		6C439456254F6BBA007F0A0C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C439455254F6BBA007F0A0C /* UIView.swift */; };
+		6C439461254F75C3007F0A0C /* MapDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C439460254F75C3007F0A0C /* MapDetailsModel.swift */; };
 		6C597575253ECFC600F19B63 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C597574253ECFC500F19B63 /* SideMenuViewController.swift */; };
 		6C597585253EDB7200F19B63 /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C597584253EDB7200F19B63 /* SideMenuModel.swift */; };
-		6C6AB553253D721C00248D32 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6AB552253D721C00248D32 /* UIStoryboardExtension.swift */; };
+		6C6AB553253D721C00248D32 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6AB552253D721C00248D32 /* UIStoryboard.swift */; };
 		6C761427253D8C3A00175C0D /* NewStroyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C761426253D8C3A00175C0D /* NewStroyboard.storyboard */; };
 		6C768476253999810033112A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C768475253999810033112A /* AppDelegate.swift */; };
 		6C768478253999810033112A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C768477253999810033112A /* SceneDelegate.swift */; };
@@ -30,9 +33,9 @@
 		6C76851A2539CD850033112A /* Extentions .swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7685192539CD850033112A /* Extentions .swift */; };
 		6C7685262539D5980033112A /* DetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7685252539D5980033112A /* DetailsModel.swift */; };
 		6C8E3D19254AFEDD0032671B /* AppIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C8E3D18254AFEDD0032671B /* AppIcons.xcassets */; };
-		6C8E3D1E254AFF000032671B /* UICustomColor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C8E3D1D254AFF000032671B /* UICustomColor.xcassets */; };
+		6C8E3D1E254AFF000032671B /* UIColor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C8E3D1D254AFF000032671B /* UIColor.xcassets */; };
 		6C8E3D26254B01770032671B /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8E3D25254B01770032671B /* MainModel.swift */; };
-		6C8E3D36254B0E740032671B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8E3D35254B0E740032671B /* UIColorExtension.swift */; };
+		6C8E3D36254B0E740032671B /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8E3D35254B0E740032671B /* UIColor.swift */; };
 		8B5589F60F9DCFBCF80D4BBC /* Pods_RestoranMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A7EE580B1BA59E63E42155 /* Pods_RestoranMenu.framework */; };
 		A8F487F3B3E7568D85C40565 /* Pods_RestoranMenuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 440B110A6EDA303824D04C2C /* Pods_RestoranMenuTests.framework */; };
 /* End PBXBuildFile section */
@@ -59,9 +62,12 @@
 		55784CC39CBCAD5FC2DD314F /* Pods-RestoranMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestoranMenu.release.xcconfig"; path = "Target Support Files/Pods-RestoranMenu/Pods-RestoranMenu.release.xcconfig"; sourceTree = "<group>"; };
 		6C015210254C1AC200F72F50 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		6C015215254C1AE400F72F50 /* MapDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailsViewController.swift; sourceTree = "<group>"; };
+		6C439426254F1E3C007F0A0C /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		6C439455254F6BBA007F0A0C /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		6C439460254F75C3007F0A0C /* MapDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailsModel.swift; sourceTree = "<group>"; };
 		6C597574253ECFC500F19B63 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		6C597584253EDB7200F19B63 /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
-		6C6AB552253D721C00248D32 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		6C6AB552253D721C00248D32 /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
 		6C761426253D8C3A00175C0D /* NewStroyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewStroyboard.storyboard; sourceTree = "<group>"; };
 		6C768472253999810033112A /* RestoranMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestoranMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C768475253999810033112A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,9 +91,9 @@
 		6C7685192539CD850033112A /* Extentions .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extentions .swift"; sourceTree = "<group>"; };
 		6C7685252539D5980033112A /* DetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModel.swift; sourceTree = "<group>"; };
 		6C8E3D18254AFEDD0032671B /* AppIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcons.xcassets; sourceTree = "<group>"; };
-		6C8E3D1D254AFF000032671B /* UICustomColor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UICustomColor.xcassets; sourceTree = "<group>"; };
+		6C8E3D1D254AFF000032671B /* UIColor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UIColor.xcassets; sourceTree = "<group>"; };
 		6C8E3D25254B01770032671B /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
-		6C8E3D35254B0E740032671B /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		6C8E3D35254B0E740032671B /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		74F46294E0CBB6A29581605E /* Pods_RestoranMenu_RestoranMenuUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestoranMenu_RestoranMenuUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC76CDFFABBB419094C8EC6 /* Pods-RestoranMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestoranMenu.debug.xcconfig"; path = "Target Support Files/Pods-RestoranMenu/Pods-RestoranMenu.debug.xcconfig"; sourceTree = "<group>"; };
 		B04E8F8E6B19972FB775FE8D /* Pods-RestoranMenu-RestoranMenuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestoranMenu-RestoranMenuUITests.debug.xcconfig"; path = "Target Support Files/Pods-RestoranMenu-RestoranMenuUITests/Pods-RestoranMenu-RestoranMenuUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,10 +135,54 @@
 			isa = PBXGroup;
 			children = (
 				6C7685192539CD850033112A /* Extentions .swift */,
-				6C6AB552253D721C00248D32 /* UIStoryboardExtension.swift */,
-				6C8E3D35254B0E740032671B /* UIColorExtension.swift */,
+				6C6AB552253D721C00248D32 /* UIStoryboard.swift */,
+				6C8E3D35254B0E740032671B /* UIColor.swift */,
+				6C439455254F6BBA007F0A0C /* UIView.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		6C43941F254F1D3F007F0A0C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6C7684B625399B250033112A /* MainViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6C439420254F1D4C007F0A0C /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				6C76850E2539BF5F0033112A /* DetailsViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		6C439421254F1D55007F0A0C /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				6C597574253ECFC500F19B63 /* SideMenuViewController.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		6C439422254F1D5D007F0A0C /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				6C015210254C1AC200F72F50 /* MapViewController.swift */,
+				6C015215254C1AE400F72F50 /* MapDetailsViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		6C43942E254F29EB007F0A0C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C8E3D11254AFD7B0032671B /* Assets */,
+				6C8E3D12254AFDA30032671B /* Plist */,
+				6C8E3D14254AFE280032671B /* NavigationBar */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		6C768469253999810033112A = {
@@ -160,13 +210,11 @@
 		6C768474253999810033112A /* RestoranMenu */ = {
 			isa = PBXGroup;
 			children = (
+				6C43942E254F29EB007F0A0C /* Supporting Files */,
 				6C7685242539D5740033112A /* Model */,
 				6C8E3D0F254AFD1E0032671B /* Extensions */,
-				6C8E3D14254AFE280032671B /* NavigationBar */,
 				6C8E3D13254AFE0E0032671B /* CollectionViewCell */,
-				6C8E3D12254AFDA30032671B /* Plist */,
-				6C8E3D11254AFD7B0032671B /* Assets */,
-				6C8E3D10254AFD6C0032671B /* ViewController */,
+				6C8E3D10254AFD6C0032671B /* Scene */,
 				6C768475253999810033112A /* AppDelegate.swift */,
 				6C768477253999810033112A /* SceneDelegate.swift */,
 				6C76847B253999810033112A /* Main.storyboard */,
@@ -201,6 +249,8 @@
 				6C8E3D25254B01770032671B /* MainModel.swift */,
 				6C7685252539D5980033112A /* DetailsModel.swift */,
 				6C597584253EDB7200F19B63 /* SideMenuModel.swift */,
+				6C439426254F1E3C007F0A0C /* MapModel.swift */,
+				6C439460254F75C3007F0A0C /* MapDetailsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,16 +263,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		6C8E3D10254AFD6C0032671B /* ViewController */ = {
+		6C8E3D10254AFD6C0032671B /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				6C7684B625399B250033112A /* MainViewController.swift */,
-				6C76850E2539BF5F0033112A /* DetailsViewController.swift */,
-				6C597574253ECFC500F19B63 /* SideMenuViewController.swift */,
-				6C015210254C1AC200F72F50 /* MapViewController.swift */,
-				6C015215254C1AE400F72F50 /* MapDetailsViewController.swift */,
+				6C43941F254F1D3F007F0A0C /* Home */,
+				6C439420254F1D4C007F0A0C /* Details */,
+				6C439421254F1D55007F0A0C /* SideMenu */,
+				6C439422254F1D5D007F0A0C /* Map */,
 			);
-			path = ViewController;
+			path = Scene;
 			sourceTree = "<group>";
 		};
 		6C8E3D11254AFD7B0032671B /* Assets */ = {
@@ -230,7 +279,7 @@
 			children = (
 				6C768481253999820033112A /* Images.xcassets */,
 				6C8E3D18254AFEDD0032671B /* AppIcons.xcassets */,
-				6C8E3D1D254AFF000032671B /* UICustomColor.xcassets */,
+				6C8E3D1D254AFF000032671B /* UIColor.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -391,7 +440,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C8E3D1E254AFF000032671B /* UICustomColor.xcassets in Resources */,
+				6C8E3D1E254AFF000032671B /* UIColor.xcassets in Resources */,
 				6C8E3D19254AFEDD0032671B /* AppIcons.xcassets in Resources */,
 				6C768485253999820033112A /* LaunchScreen.storyboard in Resources */,
 				6C768482253999820033112A /* Images.xcassets in Resources */,
@@ -524,7 +573,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C6AB553253D721C00248D32 /* UIStoryboardExtension.swift in Sources */,
+				6C6AB553253D721C00248D32 /* UIStoryboard.swift in Sources */,
+				6C439461254F75C3007F0A0C /* MapDetailsModel.swift in Sources */,
 				6C768480253999810033112A /* RestoranMenu.xcdatamodeld in Sources */,
 				6C768476253999810033112A /* AppDelegate.swift in Sources */,
 				6C015216254C1AE400F72F50 /* MapDetailsViewController.swift in Sources */,
@@ -534,8 +584,10 @@
 				6C7684B725399B250033112A /* MainViewController.swift in Sources */,
 				6C8E3D26254B01770032671B /* MainModel.swift in Sources */,
 				6C597575253ECFC600F19B63 /* SideMenuViewController.swift in Sources */,
+				6C439427254F1E3C007F0A0C /* MapModel.swift in Sources */,
+				6C439456254F6BBA007F0A0C /* UIView.swift in Sources */,
 				6C76851A2539CD850033112A /* Extentions .swift in Sources */,
-				6C8E3D36254B0E740032671B /* UIColorExtension.swift in Sources */,
+				6C8E3D36254B0E740032671B /* UIColor.swift in Sources */,
 				6C7684C82539A6590033112A /* NavigationBar.swift in Sources */,
 				6C7685262539D5980033112A /* DetailsModel.swift in Sources */,
 				6C7685142539C2C10033112A /* DetailsCollectionViewCell.swift in Sources */,
@@ -719,7 +771,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BC29D2LE73;
-				INFOPLIST_FILE = RestoranMenu/Plist/Info.plist;
+				INFOPLIST_FILE = "RestoranMenu/Supporting Files/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -740,7 +792,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BC29D2LE73;
-				INFOPLIST_FILE = RestoranMenu/Plist/Info.plist;
+				INFOPLIST_FILE = "RestoranMenu/Supporting Files/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -98,9 +98,9 @@ class DetailsViewController: UIViewController, UICollectionViewDelegate , UIColl
            // The width of each segment would be based on the text length and font size.
         segmentController.fixedSegmentWidth = false
         
-        let largerRedTextAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.red]
-        let largerRedTextHighlightAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.blue]
-        let largerRedTextSelectAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.orange]
+        let largerRedTextAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.white]
+        let largerRedTextHighlightAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.customPink]
+        let largerRedTextSelectAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.red]
 
         segmentController.setTitleTextAttributes(largerRedTextAttributes, for: .normal)
         segmentController.setTitleTextAttributes(largerRedTextHighlightAttributes, for: .highlighted)

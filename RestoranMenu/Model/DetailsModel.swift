@@ -21,7 +21,8 @@ struct DetailsModel {
 //    var tupe : UIImage = UIImage() //tipini belirittik
 //    var type = UIImage() // tipini belirtmeden direk bos oldugunu belirttik
 //    var name : String = "" //tipini belirtip bos deger atadik
-//    
+//    var name : [String]!  -> string turunde bir dizi oldugunu belirttik.! isaretini koymamizin sebebi kesin boyle birseyin var oldugunu belirttik
+//    var name : [String] -> String turunde bir dizi oldugunu belirttik ve bos oldugunu belirttik.
     //Servisden gelen veririn degerini bilmedigimiz icin tipini vermemiz gerekiyor.
 }
 
