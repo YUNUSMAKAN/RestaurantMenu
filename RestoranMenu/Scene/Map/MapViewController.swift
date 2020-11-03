@@ -17,7 +17,14 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
     
     var locationManager = CLLocationManager()
     var mapModel = MapModel(locationName: ["İSTANBUL","ANKARA","İZMİR","KONYA","KAYSERİ","MARDİN","TRABZON","VAN","ELAZIĞ","ANTALYA","SİVAS","SAMSUN"], latitude: [41.048335,39.903555,38.417860,37.878694,38.723514,37.325703,40.810374,38.503016,38.710760,36.898054,39.528278,41.291532], longitude: [28.673412,32.622681,26.939633,32.366399,35.400147,40.327947,39.534671,43.288514,38.797710,30.648065,36.183928,36.278679])
+    
+    var mapDetailsModel = MapDetailsModel(locationName: ["İSTANBUL ŞUBESİ","ANKARA ŞUBESİ","İZMİR ŞUBESİ","KONYA ŞUBESİ","KAYSERİ ŞUBESİ","MARDİN ŞUBESİ","TRABZON ŞUBESİ","VAN ŞUBESİ","ELAZIĞ ŞUBESİ","ANTALYA ŞUBESİ","SİVAS ŞUBESİ","SAMSUN ŞUBESİ"], address: ["İSTANBUL/ MERKEZ","ANKARA/MERKEZ","İZMİR/MERKEZ","KONYA/MERKEZ","KAYSERİ/MERKEZ","MARDİN/MERKEZ","TRABZON MERKEZ","VAN/ MERKEZ","ELAZIĞ/MERKEZ","ANTALYA/MERKEZ","SİVAS/MERKEZ","SAMSUN/MERKEZ"], phone: [123456789123,123456789123,123456789123,123456789123,123456789123,123456789123,123456789123,123456789123,123456789123,123456789123,123456789123,123456789123],images:["istanbul","ankara","izmir","konya","kayseri","mardin","trabzon","van","elazig","antalya","sivas","samsun"])
+    
     var chosenIndex = 0
+    var locationName = ""
+    var locationAddress = ""
+    var locationPhone = ""
+    var locationImage = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +34,7 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
+        
         setAnnotation()
     }
 //    MARK:- GRADIENT AYARLAMA ISLEMI.
@@ -66,8 +74,19 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
                 //pinView?.image = UIImage(named: "sun1")
                 pinView?.tintColor = UIColor.blue
                 
-                let button = UIButton(type: UIButton.ButtonType.detailDisclosure)
-                pinView?.rightCalloutAccessoryView = button
+                let button1 = UIButton(type: UIButton.ButtonType.detailDisclosure)
+                pinView?.rightCalloutAccessoryView = button1
+                
+                let button2 = UIButton(type: UIButton.ButtonType.detailDisclosure)
+                pinView?.leftCalloutAccessoryView = button2
+                
+//              SECILEN KISMI BELIRLEME
+                for i in 0...11 {
+                    if annotation.title == mapModel.locationName[i] {
+                        pinView?.tag = i
+                    }
+                    
+                }
                 
             }else {
                 pinView?.annotation = annotation
@@ -77,12 +96,30 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
     
 //    MARK:- ANNOTATION NA TIKLANDIGINDA CIKAN BILGI BOLANUNDAKI BUTONUNA TIKLANDIGINDA NE OLUCAGINI BELIRTIYORUZ!
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        
+//        MAPDETAILS E VERI AKTARIMI!
+        for i in 0...mapModel.locationName.count {
+            if view.tag == i {
+                locationName = mapDetailsModel.locationName[i]
+                locationAddress = mapDetailsModel.address[i]
+                locationPhone = String(mapDetailsModel.phone[i])
+                locationImage = mapDetailsModel.images[i]
+            }
+        }
+        
+        DispatchQueue.main.async { //bu bir closure oldugundon dolayi self kullaniriz.
             
-        let vc = UIStoryboard.myStoryboardName.instantiateViewController(identifier: "MapDetailsVC") as! MapDetailsViewController
-        vc.modalPresentationStyle = .fullScreen
-        //self.navigationController?.pushViewController(vc, animated: true) //Navigasyon uzerinden gitmede bu kullanilir
-        show(vc, sender: nil) //normal gecis icin bunu kullaniriz.
-                    
+            let vc = UIStoryboard.myStoryboardName.instantiateViewController(identifier: "MapDetailsVC") as! MapDetailsViewController
+            vc.modalPresentationStyle = .fullScreen
+            vc.locationName = self.locationName
+            vc.locationImage = self.locationImage
+            vc.locationAddress = self.locationAddress
+            vc.locationPhone = self.locationPhone
+
+            //self.navigationController?.pushViewController(vc, animated: true) //Navigasyon uzerinden gitmede bu kullanilir
+            self.show(vc, sender: nil) //normal gecis icin bunu kullaniriz.
+            self.dismiss(animated: true, completion: nil)
+        }
         }
     
 //    MARK:- KULLANICININ LOKASYONUNUN ALMA ISLEMININ YAPILDIGI FONKSIYON!

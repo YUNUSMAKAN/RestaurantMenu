@@ -210,16 +210,13 @@
 		6C768474253999810033112A /* RestoranMenu */ = {
 			isa = PBXGroup;
 			children = (
+				6CE7DC2125516B7600D01149 /* Delegate */,
+				6CE7DC2025516B3F00D01149 /* Storyboards */,
 				6C43942E254F29EB007F0A0C /* Supporting Files */,
 				6C7685242539D5740033112A /* Model */,
 				6C8E3D0F254AFD1E0032671B /* Extensions */,
 				6C8E3D13254AFE0E0032671B /* CollectionViewCell */,
 				6C8E3D10254AFD6C0032671B /* Scene */,
-				6C768475253999810033112A /* AppDelegate.swift */,
-				6C768477253999810033112A /* SceneDelegate.swift */,
-				6C76847B253999810033112A /* Main.storyboard */,
-				6C761426253D8C3A00175C0D /* NewStroyboard.storyboard */,
-				6C768483253999820033112A /* LaunchScreen.storyboard */,
 				6C76847E253999810033112A /* RestoranMenu.xcdatamodeld */,
 			);
 			path = RestoranMenu;
@@ -307,6 +304,25 @@
 				6C7684C72539A6590033112A /* NavigationBar.swift */,
 			);
 			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		6CE7DC2025516B3F00D01149 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6C768483253999820033112A /* LaunchScreen.storyboard */,
+				6C761426253D8C3A00175C0D /* NewStroyboard.storyboard */,
+				6C76847B253999810033112A /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6CE7DC2125516B7600D01149 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6C768475253999810033112A /* AppDelegate.swift */,
+				6C768477253999810033112A /* SceneDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 		77A2694DC2DC8E12693CC0CD /* Frameworks */ = {
