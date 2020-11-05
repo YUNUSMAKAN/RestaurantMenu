@@ -67,9 +67,11 @@ class DetailsViewController: UIViewController, UICollectionViewDelegate , UIColl
 
         title2Label.text = itemTitle
         imageView.image = itemImage
+        imageView.layer.cornerRadius = 40
         
         setMainCollectionView()
         setScrollableSegmentController()
+        
         
     }
     
@@ -129,7 +131,7 @@ class DetailsViewController: UIViewController, UICollectionViewDelegate , UIColl
         cell.definitionLabel.text = detailsModel.typeDefinition[selectedIndex][indexPath.row]
         cell.imageView.image = UIImage(named: detailsModel.typeImage![selectedIndex][indexPath.row]) //string olarak aldigimiz imagelari uiimage ile cevirdik
         cell.priceLabel.text = "\(String(detailsModel.typePrice[selectedIndex][indexPath.row])) ₺"
-        
+        cell.imageView.layer.cornerRadius = 15
         return cell
         
     }

@@ -40,6 +40,7 @@ class NavigationBar: UINavigationBar {
     func setImageAndText() {
 
         let image = UIImage(named: "logoo")
+        logoView?.layer.cornerRadius = 30
         self.logoView!.image = image
 //        self.barTintColor = AppColor.pineGreen
 

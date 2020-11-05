@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wyg-wj-HAB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Uek-hX-4PM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -319,7 +319,7 @@
         <!--Map View Controller-->
         <scene sceneID="xzv-02-cdS">
             <objects>
-                <viewController id="GEk-72-WyU" customClass="MapViewController" customModule="RestoranMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapVC" id="GEk-72-WyU" customClass="MapViewController" customModule="RestoranMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dO5-La-KIc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -457,6 +457,7 @@
                     <connections>
                         <outlet property="addressLabel" destination="fpF-6z-giN" id="HEy-GJ-C5K"/>
                         <outlet property="backgroundView" destination="J4h-2G-SNQ" id="rGp-7s-IJI"/>
+                        <outlet property="customButton" destination="RSS-mF-Bsz" id="lX1-CT-pav"/>
                         <outlet property="imageView" destination="lgE-H4-nvd" id="VBS-DL-FdJ"/>
                         <outlet property="phoneLabel" destination="7eE-gi-mDl" id="HGt-4E-KgA"/>
                         <outlet property="titleNameLabel" destination="dOB-DL-qVj" id="7JP-kE-CbH"/>

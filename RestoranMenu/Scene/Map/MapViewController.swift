@@ -120,23 +120,23 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
             self.dismiss(animated: true, completion: nil)
         }
         
-//        NAVIGASYONU ACMA ISLEMI.
-        let requestLocation = CLLocation(latitude: mapModel.latitude[view.tag], longitude: mapModel.longitude[view.tag])
-        CLGeocoder().reverseGeocodeLocation(requestLocation) { (placemarks, error) in //Bu yapinin adina closure denir.
-           
-            
-            if let placemark = placemarks {
-            if placemark.count > 0 {
-                
-                let newPlacemark = MKPlacemark(placemark: placemark[0])
-                let item = MKMapItem(placemark: newPlacemark)
-                item.name = self.mapModel.locationName[view.tag] //item i kullanarak navigasyonu acabilirim.
-                let launcOptions = [MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving] //Araba ile gidicegimiz belirttik.
-                item.openInMaps(launchOptions: launcOptions)
-                
-        }
-            }
-        }
+////        NAVIGASYONU ACMA ISLEMI.
+//        let requestLocation = CLLocation(latitude: mapModel.latitude[view.tag], longitude: mapModel.longitude[view.tag])
+//        CLGeocoder().reverseGeocodeLocation(requestLocation) { (placemarks, error) in //Bu yapinin adina closure denir.
+//           
+//            
+//            if let placemark = placemarks {
+//            if placemark.count > 0 {
+//                
+//                let newPlacemark = MKPlacemark(placemark: placemark[0])
+//                let item = MKMapItem(placemark: newPlacemark)
+//                item.name = self.mapModel.locationName[view.tag] //item i kullanarak navigasyonu acabilirim.
+//                let launcOptions = [MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving] //Araba ile gidicegimiz belirttik.
+//                item.openInMaps(launchOptions: launcOptions)
+//                
+//        }
+//            }
+//        }
     }
     
 //    MARK:- KULLANICININ LOKASYONUNUN ALMA ISLEMININ YAPILDIGI FONKSIYON!

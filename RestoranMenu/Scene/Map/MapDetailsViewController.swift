@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MapKit
 
 class MapDetailsViewController: UIViewController {
     
@@ -14,6 +15,7 @@ class MapDetailsViewController: UIViewController {
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var backgroundView: UIView!
+    @IBOutlet weak var customButton: UIButton!
     
     var locationName = ""
     var locationImage = ""
@@ -23,7 +25,9 @@ class MapDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        placeButton(<#Any#>).layer.cornerRadius = 20.0
+        imageView.layer.cornerRadius = 15
+        customButton.layer.cornerRadius = 15 //Butonu ozellestirme islemi.
+        
         
 //MARK:- GRADIENT AYARLAMA ISLEMI!
         backgroundView.setGradientBackground(colorTop:UIColor.Color2, colorBottom:UIColor.white)
@@ -36,5 +40,6 @@ class MapDetailsViewController: UIViewController {
     
     @IBAction func placeButton(_ sender: Any) {
         
+    
     }
 }

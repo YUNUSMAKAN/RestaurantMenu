@@ -21,6 +21,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         setMainCollectionView()
         loadNavigationBar()
         
@@ -37,6 +38,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "mainCell", for: indexPath) as! MainCollectionViewCell
         cell.titleLabel.text = mainModel.typesTitle![indexPath.row]
         cell.imageView.image = UIImage(named: mainModel.images![indexPath.row])
+        cell.imageView.layer.cornerRadius =  15
     
         return cell
     }
