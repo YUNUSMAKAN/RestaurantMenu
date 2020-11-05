@@ -210,14 +210,14 @@
 		6C768474253999810033112A /* RestoranMenu */ = {
 			isa = PBXGroup;
 			children = (
-				6CE7DC2125516B7600D01149 /* Delegate */,
 				6CE7DC2025516B3F00D01149 /* Storyboards */,
 				6C43942E254F29EB007F0A0C /* Supporting Files */,
 				6C7685242539D5740033112A /* Model */,
 				6C8E3D0F254AFD1E0032671B /* Extensions */,
 				6C8E3D13254AFE0E0032671B /* CollectionViewCell */,
 				6C8E3D10254AFD6C0032671B /* Scene */,
-				6C76847E253999810033112A /* RestoranMenu.xcdatamodeld */,
+				6CE7DC2525516C3C00D01149 /* XcDataModeld */,
+				6CE7DC2125516B7600D01149 /* Delegate */,
 			);
 			path = RestoranMenu;
 			sourceTree = "<group>";
@@ -323,6 +323,14 @@
 				6C768477253999810033112A /* SceneDelegate.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		6CE7DC2525516C3C00D01149 /* XcDataModeld */ = {
+			isa = PBXGroup;
+			children = (
+				6C76847E253999810033112A /* RestoranMenu.xcdatamodeld */,
+			);
+			path = XcDataModeld;
 			sourceTree = "<group>";
 		};
 		77A2694DC2DC8E12693CC0CD /* Frameworks */ = {

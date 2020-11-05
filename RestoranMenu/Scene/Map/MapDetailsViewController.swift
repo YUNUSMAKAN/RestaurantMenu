@@ -23,6 +23,8 @@ class MapDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        placeButton(<#Any#>).layer.cornerRadius = 20.0
+        
 //MARK:- GRADIENT AYARLAMA ISLEMI!
         backgroundView.setGradientBackground(colorTop:UIColor.Color2, colorBottom:UIColor.white)
      

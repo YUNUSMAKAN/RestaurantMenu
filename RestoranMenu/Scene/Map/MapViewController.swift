@@ -20,7 +20,6 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
     
     var mapDetailsModel = MapDetailsModel(locationName: ["İSTANBUL ŞUBESİ","ANKARA ŞUBESİ","İZMİR ŞUBESİ","KONYA ŞUBESİ","KAYSERİ ŞUBESİ","MARDİN ŞUBESİ","TRABZON ŞUBESİ","VAN ŞUBESİ","ELAZIĞ ŞUBESİ","ANTALYA ŞUBESİ","SİVAS ŞUBESİ","SAMSUN ŞUBESİ"], address: ["İSTANBUL/ MERKEZ","ANKARA/MERKEZ","İZMİR/MERKEZ","KONYA/MERKEZ","KAYSERİ/MERKEZ","MARDİN/MERKEZ","TRABZON MERKEZ","VAN/ MERKEZ","ELAZIĞ/MERKEZ","ANTALYA/MERKEZ","SİVAS/MERKEZ","SAMSUN/MERKEZ"], phone: [123456789123,123456789123,123456789123,123456789123,123456789123,123456789123,123456789123,123456789123,123456789123,123456789123,123456789123,123456789123],images:["istanbul","ankara","izmir","konya","kayseri","mardin","trabzon","van","elazig","antalya","sivas","samsun"])
     
-    var chosenIndex = 0
     var locationName = ""
     var locationAddress = ""
     var locationPhone = ""
@@ -120,7 +119,25 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
             self.show(vc, sender: nil) //normal gecis icin bunu kullaniriz.
             self.dismiss(animated: true, completion: nil)
         }
+        
+//        NAVIGASYONU ACMA ISLEMI.
+        let requestLocation = CLLocation(latitude: mapModel.latitude[view.tag], longitude: mapModel.longitude[view.tag])
+        CLGeocoder().reverseGeocodeLocation(requestLocation) { (placemarks, error) in //Bu yapinin adina closure denir.
+           
+            
+            if let placemark = placemarks {
+            if placemark.count > 0 {
+                
+                let newPlacemark = MKPlacemark(placemark: placemark[0])
+                let item = MKMapItem(placemark: newPlacemark)
+                item.name = self.mapModel.locationName[view.tag] //item i kullanarak navigasyonu acabilirim.
+                let launcOptions = [MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving] //Araba ile gidicegimiz belirttik.
+                item.openInMaps(launchOptions: launcOptions)
+                
         }
+            }
+        }
+    }
     
 //    MARK:- KULLANICININ LOKASYONUNUN ALMA ISLEMININ YAPILDIGI FONKSIYON!
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -132,4 +149,7 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
 
         }
 
-}
+  }
+            
+    
+
