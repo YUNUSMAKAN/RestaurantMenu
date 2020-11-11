@@ -72,7 +72,6 @@ class DetailsViewController: UIViewController, UICollectionViewDelegate , UIColl
         setMainCollectionView()
         setScrollableSegmentController()
         
-        
     }
     
     func setScrollableSegmentController() {
@@ -119,7 +118,6 @@ class DetailsViewController: UIViewController, UICollectionViewDelegate , UIColl
         
     }
   
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return detailsModel.typeName[section].count
     }
@@ -149,6 +147,5 @@ class DetailsViewController: UIViewController, UICollectionViewDelegate , UIColl
         detailsCollectionView.setCollectionViewLayout(layout, animated: true)
 
     }
-    
 
 }

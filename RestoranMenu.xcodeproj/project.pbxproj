@@ -10,6 +10,10 @@
 		1DBF1781736DD9893ACE51AA /* Pods_RestoranMenu_RestoranMenuUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F46294E0CBB6A29581605E /* Pods_RestoranMenu_RestoranMenuUITests.framework */; };
 		6C015211254C1AC200F72F50 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C015210254C1AC200F72F50 /* MapViewController.swift */; };
 		6C015216254C1AE400F72F50 /* MapDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C015215254C1AE400F72F50 /* MapDetailsViewController.swift */; };
+		6C411839255C19ED00F95AA4 /* ReservationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C411838255C19ED00F95AA4 /* ReservationType.swift */; };
+		6C432275255A80AB004BD016 /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C432274255A80AB004BD016 /* ReservationViewController.swift */; };
+		6C43227D255A8120004BD016 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C43227C255A8120004BD016 /* UILabel.swift */; };
+		6C432285255AA744004BD016 /* ReservationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C432284255AA744004BD016 /* ReservationDetailsViewController.swift */; };
 		6C439427254F1E3C007F0A0C /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C439426254F1E3C007F0A0C /* MapModel.swift */; };
 		6C439456254F6BBA007F0A0C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C439455254F6BBA007F0A0C /* UIView.swift */; };
 		6C439461254F75C3007F0A0C /* MapDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C439460254F75C3007F0A0C /* MapDetailsModel.swift */; };
@@ -30,7 +34,7 @@
 		6C7684C82539A6590033112A /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7684C72539A6590033112A /* NavigationBar.swift */; };
 		6C76850F2539BF5F0033112A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C76850E2539BF5F0033112A /* DetailsViewController.swift */; };
 		6C7685142539C2C10033112A /* DetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7685132539C2C10033112A /* DetailsCollectionViewCell.swift */; };
-		6C76851A2539CD850033112A /* Extentions .swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7685192539CD850033112A /* Extentions .swift */; };
+		6C76851A2539CD850033112A /* UIStoryboard2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7685192539CD850033112A /* UIStoryboard2.swift */; };
 		6C7685262539D5980033112A /* DetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7685252539D5980033112A /* DetailsModel.swift */; };
 		6C8E3D19254AFEDD0032671B /* AppIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C8E3D18254AFEDD0032671B /* AppIcons.xcassets */; };
 		6C8E3D1E254AFF000032671B /* UIColor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C8E3D1D254AFF000032671B /* UIColor.xcassets */; };
@@ -62,6 +66,10 @@
 		55784CC39CBCAD5FC2DD314F /* Pods-RestoranMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestoranMenu.release.xcconfig"; path = "Target Support Files/Pods-RestoranMenu/Pods-RestoranMenu.release.xcconfig"; sourceTree = "<group>"; };
 		6C015210254C1AC200F72F50 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		6C015215254C1AE400F72F50 /* MapDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailsViewController.swift; sourceTree = "<group>"; };
+		6C411838255C19ED00F95AA4 /* ReservationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationType.swift; sourceTree = "<group>"; };
+		6C432274255A80AB004BD016 /* ReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
+		6C43227C255A8120004BD016 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		6C432284255AA744004BD016 /* ReservationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationDetailsViewController.swift; sourceTree = "<group>"; };
 		6C439426254F1E3C007F0A0C /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
 		6C439455254F6BBA007F0A0C /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		6C439460254F75C3007F0A0C /* MapDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailsModel.swift; sourceTree = "<group>"; };
@@ -88,7 +96,7 @@
 		6C7684C72539A6590033112A /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		6C76850E2539BF5F0033112A /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		6C7685132539C2C10033112A /* DetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCollectionViewCell.swift; sourceTree = "<group>"; };
-		6C7685192539CD850033112A /* Extentions .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extentions .swift"; sourceTree = "<group>"; };
+		6C7685192539CD850033112A /* UIStoryboard2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard2.swift; sourceTree = "<group>"; };
 		6C7685252539D5980033112A /* DetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModel.swift; sourceTree = "<group>"; };
 		6C8E3D18254AFEDD0032671B /* AppIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcons.xcassets; sourceTree = "<group>"; };
 		6C8E3D1D254AFF000032671B /* UIColor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UIColor.xcassets; sourceTree = "<group>"; };
@@ -134,12 +142,30 @@
 		6C015206254C0FAB00F72F50 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				6C7685192539CD850033112A /* Extentions .swift */,
+				6C7685192539CD850033112A /* UIStoryboard2.swift */,
 				6C6AB552253D721C00248D32 /* UIStoryboard.swift */,
 				6C8E3D35254B0E740032671B /* UIColor.swift */,
 				6C439455254F6BBA007F0A0C /* UIView.swift */,
+				6C43227C255A8120004BD016 /* UILabel.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		6C411837255C19C500F95AA4 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				6C411838255C19ED00F95AA4 /* ReservationType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		6C432270255A8066004BD016 /* Reservation */ = {
+			isa = PBXGroup;
+			children = (
+				6C432274255A80AB004BD016 /* ReservationViewController.swift */,
+				6C432284255AA744004BD016 /* ReservationDetailsViewController.swift */,
+			);
+			path = Reservation;
 			sourceTree = "<group>";
 		};
 		6C43941F254F1D3F007F0A0C /* Home */ = {
@@ -210,6 +236,7 @@
 		6C768474253999810033112A /* RestoranMenu */ = {
 			isa = PBXGroup;
 			children = (
+				6C411837255C19C500F95AA4 /* Enums */,
 				6CE7DC2025516B3F00D01149 /* Storyboards */,
 				6C43942E254F29EB007F0A0C /* Supporting Files */,
 				6C7685242539D5740033112A /* Model */,
@@ -263,6 +290,7 @@
 		6C8E3D10254AFD6C0032671B /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				6C432270255A8066004BD016 /* Reservation */,
 				6C43941F254F1D3F007F0A0C /* Home */,
 				6C439420254F1D4C007F0A0C /* Details */,
 				6C439421254F1D55007F0A0C /* SideMenu */,
@@ -602,6 +630,7 @@
 				6C768480253999810033112A /* RestoranMenu.xcdatamodeld in Sources */,
 				6C768476253999810033112A /* AppDelegate.swift in Sources */,
 				6C015216254C1AE400F72F50 /* MapDetailsViewController.swift in Sources */,
+				6C432275255A80AB004BD016 /* ReservationViewController.swift in Sources */,
 				6C7684C025399C280033112A /* MainCollectionViewCell.swift in Sources */,
 				6C768478253999810033112A /* SceneDelegate.swift in Sources */,
 				6C76850F2539BF5F0033112A /* DetailsViewController.swift in Sources */,
@@ -609,11 +638,14 @@
 				6C8E3D26254B01770032671B /* MainModel.swift in Sources */,
 				6C597575253ECFC600F19B63 /* SideMenuViewController.swift in Sources */,
 				6C439427254F1E3C007F0A0C /* MapModel.swift in Sources */,
+				6C432285255AA744004BD016 /* ReservationDetailsViewController.swift in Sources */,
 				6C439456254F6BBA007F0A0C /* UIView.swift in Sources */,
-				6C76851A2539CD850033112A /* Extentions .swift in Sources */,
+				6C43227D255A8120004BD016 /* UILabel.swift in Sources */,
+				6C76851A2539CD850033112A /* UIStoryboard2.swift in Sources */,
 				6C8E3D36254B0E740032671B /* UIColor.swift in Sources */,
 				6C7684C82539A6590033112A /* NavigationBar.swift in Sources */,
 				6C7685262539D5980033112A /* DetailsModel.swift in Sources */,
+				6C411839255C19ED00F95AA4 /* ReservationType.swift in Sources */,
 				6C7685142539C2C10033112A /* DetailsCollectionViewCell.swift in Sources */,
 				6C597585253EDB7200F19B63 /* SideMenuModel.swift in Sources */,
 				6C015211254C1AC200F72F50 /* MapViewController.swift in Sources */,

@@ -39,6 +39,7 @@ class SideMenuViewController: UIViewController,UITableViewDelegate,UITableViewDa
         let cell = UITableViewCell()
         cell.textLabel?.text = sideMenuModel.typesTitle![indexPath.row]
         cell.textLabel?.textColor = .customPink
+        cell.textLabel?.makeOutLine(oulineColor: .customPink, foregroundColor: .Color2)
         return cell
     }
     
@@ -47,11 +48,10 @@ class SideMenuViewController: UIViewController,UITableViewDelegate,UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if indexPath.row == 9 {
-//            let vc2 = UIStoryboard.myStoryboardName.instantiateViewController(identifier: "MapVC")
-//            self.navigationController?.pushViewController(vc2, animated: true)
-//        }else{
-            
+       if indexPath.row == 8 {
+            let vc2 = UIStoryboard.myStoryboardName.instantiateViewController(identifier: "MapVC")
+           self.navigationController?.pushViewController(vc2, animated: true)
+       }else{
         let vc = UIStoryboard.myStoryboardName.instantiateViewController(identifier: "DetailsVC") as! DetailsViewController
         vc.modalPresentationStyle = .fullScreen
         vc.selectedIndex = indexPath.row
@@ -59,13 +59,7 @@ class SideMenuViewController: UIViewController,UITableViewDelegate,UITableViewDa
         vc.itemImage = UIImage(named: sideMenuMainModel.images![indexPath.row])
         self.navigationController?.pushViewController(vc, animated: true)
             //present alttan gelen , show yandan navigasyondan gelen
-//        }
-        
-        
-        
-       
+       }
         
     }
-    
-
 }

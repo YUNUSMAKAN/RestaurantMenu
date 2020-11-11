@@ -9,6 +9,7 @@ target 'RestoranMenu' do
 
   pod 'SideMenu'
   pod 'ScrollableSegmentedControl', '~> 1.5.0'
+  pod 'FSCalendar'
 
   target 'RestoranMenuTests' do
     inherit! :search_paths

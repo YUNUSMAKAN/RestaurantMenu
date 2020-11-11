@@ -12,27 +12,22 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     @IBOutlet weak var mainCollectionView: UICollectionView!
     
-    
-    
-    var mainModel = MainModel(typesTitle: ["KAHVALTI", "APERATİFLER", "SALATALAR", "IZGARA ÇEŞİTLERİ" , "İÇECEKLER", "TATLILAR", "SOĞUK IÇECEKLER", "SICAK İÇECEKLER"], images: ["kahvalti","aperatifler","salatalar","izgara","icecekler","tatlilar","sogukicecekler","sicakicecekler"]  )
-
+    var mainModel = MainModel(typesTitle: ["KAHVALTI", "APERATİFLER", "SALATALAR", "IZGARA ÇEŞİTLERİ" , "İÇECEKLER", "TATLILAR", "SOĞUK IÇECEKLER", "SICAK İÇECEKLER"], images: ["kahvalti","aperatifler","salatalar","izgara","icecekler","tatlilar","sogukicecekler","sicakicecekler"] )
     var chosenIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         setMainCollectionView()
         loadNavigationBar()
         
-       
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return mainModel.typesTitle!.count
+        return mainModel.typesTitle[section].count
     }
     
-// MARK: - Cell'in icinde ne olucagini soyleriz.
+// MARK: -CELL IN ICINDE NE OLACAGINI BELIRTTIK.
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "mainCell", for: indexPath) as! MainCollectionViewCell
@@ -57,13 +52,13 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
 
     }
     
-    //MARK:- hamburger menu ekleme kismi.iterm
+    //MARK:- HAMBURGER MENU YU EKLEME KISMI.ITEM
+    //HAMBURGER MENU MAIN VC USTUNDE OLDUGUNDAN DOLAYI BU ISLEMI SADECE BURADA YAPARIZ.
     func loadNavigationBar() {
         
         let leftimage = UIImage(named: "menu")
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: leftimage, style: .done, target: self, action: #selector(tappedMenu(_:)))
         self.navigationItem.leftBarButtonItem?.tintColor = UIColor.white
-        
         
         let rightImage = UIImage(named: "menu")
       self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: rightImage, style: .done, target: self, action: #selector(tappedRightbarButton))
@@ -84,8 +79,6 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         //present(SideMenuManager.default.leftMenuNavigationController!, animated: true, completion: nil)
         
         //dismiss(animated: true, completion: nil)
-        
-    
       }
     
 //    MARK:- BURADA TIKLANDIGINDA NE OLUCAGINI BELIRTIYORUZ.
@@ -105,6 +98,5 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
-    
     
 }

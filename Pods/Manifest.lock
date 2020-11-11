@@ -1,20 +1,24 @@
 PODS:
+  - FSCalendar (2.8.1)
   - ScrollableSegmentedControl (1.5.0)
   - SideMenu (6.5.0)
 
 DEPENDENCIES:
+  - FSCalendar
   - ScrollableSegmentedControl (~> 1.5.0)
   - SideMenu
 
 SPEC REPOS:
   trunk:
+    - FSCalendar
     - ScrollableSegmentedControl
     - SideMenu
 
 SPEC CHECKSUMS:
+  FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
   ScrollableSegmentedControl: 2e64bbe8968a7fcd8aae5014434481464fcdfe60
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
 
-PODFILE CHECKSUM: 459e1e10e1a1fb9d635f94648f534927303b202a
+PODFILE CHECKSUM: 1233196c7efeef871039c281f0123291df965720
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0

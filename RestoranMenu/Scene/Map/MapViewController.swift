@@ -14,6 +14,7 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var backgroundView: UIView!
+    @IBOutlet weak var titleLabel: UILabel!
     
     var locationManager = CLLocationManager()
     var mapModel = MapModel(locationName: ["İSTANBUL","ANKARA","İZMİR","KONYA","KAYSERİ","MARDİN","TRABZON","VAN","ELAZIĞ","ANTALYA","SİVAS","SAMSUN"], latitude: [41.048335,39.903555,38.417860,37.878694,38.723514,37.325703,40.810374,38.503016,38.710760,36.898054,39.528278,41.291532], longitude: [28.673412,32.622681,26.939633,32.366399,35.400147,40.327947,39.534671,43.288514,38.797710,30.648065,36.183928,36.278679])
@@ -33,6 +34,8 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
+        
+        titleLabel.makeOutLine(oulineColor: .customPink, foregroundColor: .blue)
         
         setAnnotation()
     }
@@ -76,8 +79,8 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
                 let button1 = UIButton(type: UIButton.ButtonType.detailDisclosure)
                 pinView?.rightCalloutAccessoryView = button1
                 
-                let button2 = UIButton(type: UIButton.ButtonType.detailDisclosure)
-                pinView?.leftCalloutAccessoryView = button2
+                //let button2 = UIButton(type: UIButton.ButtonType.detailDisclosure)
+                //pinView?.leftCalloutAccessoryView = button2
                 
 //              SECILEN KISMI BELIRLEME
                 for i in 0...11 {
@@ -120,7 +123,7 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
             self.dismiss(animated: true, completion: nil)
         }
         
-////        NAVIGASYONU ACMA ISLEMI.
+//        NAVIGASYONU ACMA ISLEMI.
 //        let requestLocation = CLLocation(latitude: mapModel.latitude[view.tag], longitude: mapModel.longitude[view.tag])
 //        CLGeocoder().reverseGeocodeLocation(requestLocation) { (placemarks, error) in //Bu yapinin adina closure denir.
 //           
